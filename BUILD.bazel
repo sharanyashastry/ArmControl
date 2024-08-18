@@ -1,0 +1,14 @@
+cc_binary(
+    name = "ChainSimulator",
+    srcs = ["ChainSimulator.cc"],
+    deps = [":KinematicChain"]
+)
+
+cc_library(
+    name = "KinematicChain",
+    srcs = ["KinematicChain.cc"],
+    hdrs = ["KinematicChain.h"],
+    deps = ["@eigen//:eigen"],
+)
+
+
